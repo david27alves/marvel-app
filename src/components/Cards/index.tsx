@@ -52,7 +52,7 @@ export default function Cards() {
 
     }, [comics]);
 
-    if (comics.length == 0) return (
+    if (comics.length === 0) return (
         <div className="bg-gray-100">               
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-24">
@@ -79,11 +79,12 @@ export default function Cards() {
                             }>
                                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                                 {(() => {
-                                if (comic.thumbnail.path.substring(44, 63) == "image_not_available") {
+                                if (comic.thumbnail.path.substring(44, 63) === "image_not_available") {
                                     return (
                                     <img
                                         src={comic.thumbnail.path+"."+comic.thumbnail.extension}
                                         className="h-full w-full object-cover object-left"
+                                        alt=""
                                     />
                                     )
                                 } else {
@@ -91,6 +92,7 @@ export default function Cards() {
                                     <img
                                         src={comic.thumbnail.path+"."+comic.thumbnail.extension}
                                         className="h-full w-full object-cover object-center"
+                                        alt=""
                                     />
                                     )
                                 }
