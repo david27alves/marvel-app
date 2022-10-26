@@ -6,9 +6,9 @@ export default function Modal({ onClose, visible, comic }: any) {
 
     return ( <>
         <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
-            <div className="bg-white p-2 rounded">
-                <div className="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <div className="bg-white p-2 rounded lg:w-1/2">
+                <div className="flex justify-between items-start p-4 rounded-t border-">
+                    <h3 className="text-xl font-semibold text-gray-90">
                         {comic.title}
                     </h3>
                     <button onClick={onClose} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal">
@@ -18,7 +18,7 @@ export default function Modal({ onClose, visible, comic }: any) {
                 </div>
                 <div className="p-6 space-y-6">
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        {comic.description}
+                        {comic.description ? comic.description : "No description"}
                     </p>
                     {<Map 
                         center={{
@@ -37,7 +37,7 @@ export default function Modal({ onClose, visible, comic }: any) {
                     
                 </div> 
                 <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-                    <a href="https://www.google.com/maps/place/Iguatemi+Bosque/@-3.7561223,-38.4944411,16z/data=!4m5!3m4!1s0x7c74963201865ff:0x2d77cda38272811f!8m2!3d-3.7560474!4d-38.4893449" target="noreferrer" className="pointer text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Comprar</a>
+                    <a href="https://www.google.com/maps/place/Iguatemi+Bosque/@-3.7561223,-38.4944411,16z/data=!4m5!3m4!1s0x7c74963201865ff:0x2d77cda38272811f!8m2!3d-3.7560474!4d-38.4893449" target="noreferrer" className="pointer text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Comprar</a>
                 </div>               
             </div>
         </div>
