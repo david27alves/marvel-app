@@ -6,10 +6,12 @@ import Modal from '../Modal';
 interface Comics {
     id: string;
     title: string;
+    description: string;
     thumbnail: {
         extension: string,
         path: string
-    }
+    };
+    
 }
 
 export default function Cards() {

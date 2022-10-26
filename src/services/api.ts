@@ -7,7 +7,7 @@ const privateKey = '211867274d5fc179e4a93cdee39bdf0db50c0362';
 const hash = md5(ts + privateKey + apikey)
 
 const api = axios.create({
-    baseURL: `http://gateway.marvel.com/v1/public/`,
+    baseURL: `https://gateway.marvel.com/v1/public/`,
     params: {
         ts,
         apikey,

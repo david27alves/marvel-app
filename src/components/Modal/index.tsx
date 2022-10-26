@@ -18,7 +18,7 @@ export default function Modal({ onClose, visible, comic }: any) {
                 </div>
                 <div className="p-6 space-y-6">
                     <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        The European Union’s General Data Protection Regulation (G.D.P.R.).
+                        {comic.description}
                     </p>
                     {<Map 
                         center={{
