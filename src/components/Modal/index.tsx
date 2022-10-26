@@ -37,7 +37,7 @@ export default function Modal({ onClose, visible, comic }: any) {
                     
                 </div> 
                 <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-                    <a href="https://www.google.com/maps/place/Iguatemi+Bosque/@-3.7561223,-38.4944411,16z/data=!4m5!3m4!1s0x7c74963201865ff:0x2d77cda38272811f!8m2!3d-3.7560474!4d-38.4893449" target="_blank" className="pointer text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Comprar</a>
+                    <a href="https://www.google.com/maps/place/Iguatemi+Bosque/@-3.7561223,-38.4944411,16z/data=!4m5!3m4!1s0x7c74963201865ff:0x2d77cda38272811f!8m2!3d-3.7560474!4d-38.4893449" target="noreferrer" className="pointer text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Comprar</a>
                 </div>               
             </div>
         </div>
