@@ -17,7 +17,6 @@ export default function Cards() {
     const [comics, setComics] = useState<Comics[]>([]);
 
     const [cmc, setCmc] = useState({});
-    const [creators, setCreators] = useState([]);
 
     const [openModal, setOpenModal] = useState(false);
 
@@ -52,15 +51,6 @@ export default function Cards() {
         setComics([...comics, ...response.data.data.results])
 
     }, [comics]);
-
-    /*const getCreators = (id: number) => {
-            api.get(`/comics/${id}/creators`)
-            .then((response) => {
-                setCreators(response.data.data.results)
-                console.log(creators)
-            })
-
-    };*/
 
     if (comics.length == 0) return (
         <div className="bg-gray-100">               
