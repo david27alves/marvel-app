@@ -100,10 +100,10 @@ export default function Cards() {
                                 
                                 </div>
                                 <h3 className="text-base font-semibold text-gray-900 mb-10">
-                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                <button onClick={(e) => e.preventDefault()}>
                                     <span className="absolute inset-0" />
                                     {comic.title}                    
-                                </a>
+                                </button>
                                 </h3>
                             </div>
                             ))}
