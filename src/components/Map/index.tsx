@@ -1,20 +1,19 @@
 import { GoogleMap, useJsApiLoader, InfoWindow } from '@react-google-maps/api';
 
-interface Props {
-
+type Props = {
     containerStyle: {
         width: string;
         height: string;
-    }
+    };
 
     center: {
         lat: number;
         lng: number;
-    }
+    };
 
     options?: {
         disableDefaultUI: boolean
-    }
+    };
 }
 
 
